@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('background.jpg');
+            /* Specify the path to your background */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 200vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .avatar {
+            display: flex;
+            align-items: center;
+        }
+
+        .avatar img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .avatar .name {
+            font-size: 18px;
+            color: #6200ea;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #6200ea;
+            font-size: 16px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #4b00b0;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .profile-content {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            width: 400px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-content h1 {
+            color: #6200ea;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .profile-content p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .section {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .section h2 {
+            font-size: 20px;
+            color: #6200ea;
+        }
+
+        .section p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            display: inline-block;
+            text-align: center;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #4b00b0;
+        }
+
+        .main-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgba(0, 0, 0, 0.473);
+            border-radius: 12px;
+            padding: 40px;
+            width: 100%;
+            max-width: 1200px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+            flex: 1;
+        }
+
+        .text-section {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .text-section h1 {
+            color: #6200ea;
+            font-size: 64px;
+            margin-bottom: 30px;
+        }
+
+        .text-section p {
+            font-size: 20px;
+            color: white;
+            line-height: 1.6;
+        }
+
+        .image-section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .start-training-btn {
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 8px;
+            width: 250px;
+            margin: 30px auto;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: block;
+            text-align: center;
+        }
+
+        .start-training-btn:hover {
+            background-color: #4b00b0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header with profile and navigation -->
+    <header>
+        <div class="avatar">
+            <img src="avatar.png" alt="User Avatar"> <!-- Specify the path to your avatar -->
+            <div class="name">John Doe</div> <!-- User name -->
+        </div>
+        <nav>
+            <a href="main.html">Home</a>
+            <a href="#news">News</a>
+            <a href="#updates">Updates</a>
+            <a href="#authors">Authors</a>
+        </nav>
+    </header>
+
+
+    <!-- Main content with text and image -->
+    <div class="main-container">
+        <!-- Text Section -->
+        <div class="text-section">
+            <h1>Welcome!</h1>
+            <p>Manage your attention — manage your life.</p>
+            <p>Start training to focus deeper, think clearer, and achieve more.</p>
+        </div>
+
+        <!-- Image Section -->
+        <div class="image-section">
+            <img src="mainph.png" alt="Main Image"> <!-- Specify the path to your image -->
+        </div>
+    </div>
+
+    <!-- Start Training Button -->
+    <button class="start-training-btn">Start Training</button>
+    </style>
+    </head>
+
+    <body>
+
+        <div class="section">
+            <h2>Welcome</h2>
+            <p>Welcome to our website dedicated to improving attention and working with ADHD! Here we believe that
+                attention is a skill that can be developed just like any other. Our mission is to help you or your loved
+                ones find balance, gain confidence, and live a full life despite any challenges.</p>
+            <p>Whether you want to improve your cognitive abilities, learn to manage emotions, or simply handle everyday
+                tasks better, you’re in the right place. We are here to support you at every step of your journey.</p>
+        </div>
+
+        <div class="section">
+            <h2>Section: ADHD and the Importance of Attention</h2>
+            <p>ADHD (Attention Deficit Hyperactivity Disorder) is not a disease, but a characteristic of the brain. This
+                condition is accompanied by difficulties in concentration, increased activity, and impulsivity. It's
+                important to understand that ADHD is not a sentence. With the right approach to attention training,
+                mindfulness development, and routine organization, the quality of life can improve significantly.</p>
+            <button class="btn"
+                onclick="window.location.href='https://en.wikipedia.org/wiki/Attention_deficit_hyperactivity_disorder';">Learn
+                More</button>
+            <p>Even if you don’t have a diagnosis but feel like you lose focus or get distracted easily, this place is
+                for you. We have prepared effective exercises, techniques, and tips suitable for both children and
+                adults.</p>
+        </div>
+
+        <div class="section">
+            <h2>Section: Attention Training and Exercises</h2>
+            <p>1. Mindfulness Exercises
+            <p>Mindfulness is the ability to focus on the present moment. Here are some simple exercises:</p>
+            <ul>
+                <li>Breathing meditation. Find a quiet place, sit comfortably, close your eyes, and focus on your
+                    breathing. Count the inhales and exhales. If you get distracted, calmly return to the counting. This
+                    strengthens attention control.</li>
+                <li>Observation of surroundings. Spend 5 minutes noticing small details around you: sounds, textures,
+                    colors. This exercise teaches you to focus.</li>
+            </ul>
+            </p>
+            <h2>2. Attention Training Games</h2>
+            <ul>
+                <li>Find the difference. Look for differences between two pictures.</li>
+                <li>The "Sherlock" technique. Describe the room you are in, then close your eyes and try to remember all
+                    the details. This helps train memory and attention.</li>
+                <li>Stopwatch. Set a timer for 1 minute and try to focus on one object without distractions.</li>
+            </ul>
+            <h2>3. Organizational Skills</h2>
+            <ul>
+                <li>Keep a journal or planner. A clear daily structure helps reduce mental chaos.</li>
+                <li>Use the Pomodoro technique: work for 25 minutes, then take a 5-minute break. This maintains high
+                    productivity.</li>
+            </ul>
+            <h2>4. Physical Exercises</h2>
+            <p>Movement helps to process excess energy and focus:</p>
+            <ul>
+                <li>Yoga for attention. Simple poses, like the "tree" (standing on one leg), require balance and focus.
+                </li>
+                <li>Coordinated exercises. For example, clapping in rhythm with music or jumping rope.</li>
+            </ul>
+
+        </div>
+
+
+    </body>
+
+</html>
