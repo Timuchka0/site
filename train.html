@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тренировка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <header>
+        <div class="avatar">
+            <img src="avatar.png" alt="Avatar">
+            <span class="name">John Doe</span>
+        </div>
+        <nav>
+            <a href="main.html">Главная</a>
+            <a href="#">Новости</a>
+            <a href="#">Обновления</a>
+            <a href="#">Авторы</a>
+        </nav>
+    </header>
+
+
+    <main class="container">
+        <div class="training-box">
+            <h1>Выберите уровень</h1>
+            <div class="level-buttons">
+                <button class="level-btn" data-level="easy">Легкий</button>
+                <button class="level-btn" data-level="normal">Нормальный</button>
+                <button class="level-btn" data-level="hard">Тяжелый</button>
+            </div>
+            <button id="start-btn" onclick="location.href='trainm.html'">Начать</button>
+        </div>
+    </main>
+
+    <script src="trainjs.js"></script>
+
+</body>
+
+</html>
